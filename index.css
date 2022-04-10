@@ -1,0 +1,61 @@
+#body{
+    margin: 0;
+    padding: 0;
+}
+.colour{
+    background-color: brown;
+}
+#body .shape{
+    margin: 100px;
+}
+#body .name{
+    margin-bottom: 50px;
+}
+#body .shape .square{
+    width: 50px;
+    height: 50px;
+}
+#body .shape .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#body .shape .oval{
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+}
+#body .shape .trapezium{
+	border-bottom: 50px solid brown;
+	width: 100px;
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+#body .shape .rectangle{
+    width: 100px;
+    height: 50px;
+}
+#body .shape .parallelogram{
+	width: 100px;
+	height: 50px;
+	transform: skew(30deg);
+}
+
+#body .shape .triangle{
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid brown;
+    width: 0px;
+}
+
+.rotate{
+    animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
